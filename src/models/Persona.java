@@ -1,20 +1,20 @@
 package models;
 
 public class Persona {
-    private String nombre;
+    private String name;
     private int age;
     private String gender;
     
-    public Persona(String nombre, int age, String gender) {
-        this.nombre = nombre;
+    public Persona(String name, int age, String gender) {
+        this.name = name;
         this.age = age;
         this.gender = gender;
     }
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
     public int getAge() {
         return age;
@@ -30,6 +30,6 @@ public class Persona {
     }
     @Override
     public String toString() {
-        return "Persona [nombre=" + nombre + ", age=" + age + ", gender=" + gender + "]";
+        return "Persona [name=" + name + ", age=" + age + ", gender=" + gender + "]";
     }
 }

@@ -1,5 +1,4 @@
 import java.util.List;
-
 import models.Persona;
 
 public class BusquedaLineal {
@@ -13,7 +12,7 @@ public class BusquedaLineal {
     //RETORNE ---NULL--- SI NO LO ENCUENTRA
     public Persona findByName(String name){
         for (int i = 0; i < personas.size(); i++) {
-            if(personas.get(i).getNombre().equals(name)){
+            if(personas.get(i).getName().equals(name)){
                 return personas.get(i);
             }
         }
@@ -22,7 +21,7 @@ public class BusquedaLineal {
 
     public int findPosByName(String name){
         for (int i = 0; i < personas.size(); i++) {
-            if(personas.get(i).getNombre().equals(name)){
+            if(personas.get(i).getName().equals(name)){
                 return i;
             }
         }
